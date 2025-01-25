@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Content Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Smart Content Generator</h1>
+        <form id="content-form">
+            <label for="theme">Choose a Theme:</label>
+            <select id="theme" required>
+        <option value="" disabled selected>Select Theme</option>
+        <option value="Business">Business</option>
+        <option value="Portfolio">Portfolio</option>
+        <option value="E-commerce">E-commerce</option>
+      </select>
+
+            <label for="tone">Choose a Tone:</label>
+            <select id="tone" required>
+        <option value="" disabled selected>Select Tone</option>
+        <option value="Professional">Professional</option>
+        <option value="Casual">Casual</option>
+        <option value="Creative">Creative</option>
+      </select>
+
+            <button type="submit">Generate Content</button>
+        </form>
+
+        <div id="output" class="output">
+            <h2>Generated Content</h2>
+            <div id="content-area"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
